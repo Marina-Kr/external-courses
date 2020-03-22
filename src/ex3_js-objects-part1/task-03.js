@@ -1,5 +1,5 @@
-  function hasProperty(key, obj) {
+function hasProperty(key, obj) {
   return obj.hasOwnProperty(key)
-  }
+}
 
-  module.exports = hasProperty
+module.exports = hasProperty
