@@ -1,14 +1,14 @@
-function containsIdentNumb(arr){
-  let x = 0
-for (let i=0; i <arr.length; i++) {
-          if (arr[i]===arr[i+1]) 
-		  {x++}
+function containsIdentNumb(arr) {
+  const first = arr[0], arrLength = arr.length;
+  let res = false;
+  for (let i = 1; i <= arrLength-1; i++) {
+    if (first === arr[i]) {}
+    else {
+      return false;
     }
-     if (x===arr.length-1) {return true} 
- return false
+  }
+  res = true
+  return res
 }
 
 module.exports = containsIdentNumb
-
-
-
