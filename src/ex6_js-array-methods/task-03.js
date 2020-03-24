@@ -1,9 +1,10 @@
-function new_every(arr, callback) {
-for (let i = 0; i < arr.length; i++) {
-if (callback(arr[i], i, arr) === false) {
-return false}
+function newEvery(array, callback) {
+  for (let i = 0; i < array.length; i++) {
+	if (callback(array[i], i, array) === false) {
+	  return false
+	}
+  }
+  return true;
 }
-return true;
-};
 
-module.exports=new_every 
+module.exports=newEvery 

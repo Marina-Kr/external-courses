@@ -1,9 +1,10 @@
-function new_some(arr, callback) {
-for (let i = 0; i < arr.length; i++) {
-if (callback(arr[i], i, arr) === true) {
-return true}
+function newSome(array, callback) {
+  for (let i = 0; i < array.length; i++) {
+	if (callback(array[i], i, array) === true) {
+      return true;
+	}
+  }
+  return false;
 }
-return false;
-};
 
-module.exports=new_some 
+module.exports=newSome
