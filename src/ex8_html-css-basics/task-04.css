@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap');
+
+p.left {
+	width: 30%;
+  font-size:15px;
+  text-transform: uppercase;
+  word-spacing: 1px;
+}
+dl {
+		  background: pink;
+		  font-family: 'Liu Jian Mao Cao', cursive;
+}

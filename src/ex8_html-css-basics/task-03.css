@@ -1,0 +1,10 @@
+﻿div.first {
+border: 1px solid #000; 
+}
+div.second {
+	outline: 1px solid #000;
+}
+  div.third {
+     box-shadow:  0 0 0 1px #000;
+   }   
+}
