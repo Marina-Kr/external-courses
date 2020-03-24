@@ -1,6 +1,5 @@
 function copyObject(obj) {
-    let copy = Object.assign({}, obj);
-    console.log(copy);
-}
+    return Object.assign({}, obj);
+   }
 
 module.exports = copyObject
