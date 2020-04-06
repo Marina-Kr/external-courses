@@ -1,0 +1,14 @@
+td { 
+  padding: 10px 10px;
+  border: 1px solid #fff; 
+  font-family: Arial;
+  font-size: 13px;
+}
+
+#firstRow {
+	font-size: 11px;
+  }
+
+tr:nth-child(even) { background-color: #DFE8F7; }
+tr:nth-child(odd) { background-color: #CBD6EA; }
+tr:hover { background-color: #D3D4F4; }

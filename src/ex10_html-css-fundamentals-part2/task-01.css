@@ -1,0 +1,12 @@
+#round{
+  border-radius: 50%;
+  width:300px;
+  height: 300px;
+ }
+
+#mask {
+  width:300px;
+  height: 300px;
+  -webkit-mask: url(https://avatanplus.com/files/resources/mid/57cb2f8356f40156f1b1991c.png) center no-repeat;
+  -webkit-mask-size:300px;
+}
