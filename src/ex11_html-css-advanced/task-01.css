@@ -1,0 +1,109 @@
+.loader {
+	animation: animate 1.5s linear infinite;
+	clip: rect(0, 100px, 100px, 50px);
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+	position: absolute;
+}
+
+@keyframes animate {
+	0% {
+		box-shadow: inset #D2691E 0 0 0 17px;
+		transform: rotate(-140deg)
+	}
+	25% {
+		box-shadow: inset #CD853F 0 0 0 12px;
+	}
+	50% {
+		box-shadow: inset #CD853F 0 0 0 7px;
+	}
+	75% {
+		box-shadow: inset #CD853F 0 0 0 12px;
+	}
+	100% {
+		box-shadow: inset #F4A460 0 0 0 17px;
+		transform: rotate(220deg)
+	}
+}
+
+#jumping_ball {
+	display: flex;
+	align-items: center;
+	position: relative;
+	top: 150px;
+}
+
+#ball {
+	position: absolute;
+	background: #A52A2A;
+	border-radius: 100%;
+	margin: 0;
+	width: 100px;
+	height: 80px;
+	animation: dws-bounce 1.5s linear infinite;
+}
+
+@keyframes dws-bounce {
+	0% {
+		right: 90%;
+	}
+	50% {
+		right: 5%;
+	}
+	100% {
+		right: 90%;
+	}
+}
+
+#block1,
+#block2 {
+	margin: 0;
+	height: 180px;
+	width: 5%;
+	background-color: #B8860B;
+}
+
+#block2 {
+	position: absolute;
+	right: 0;
+}
+
+#animation {
+	animation: animate3 10s linear infinite;
+	height: 150px;
+	width: 150px;
+	position: relative;
+	top: 200px;
+}
+
+@keyframes animate3 {
+	0% {
+		border-radius: 90%;
+		background: linear-gradient(45deg, #DC143C, #F08080);
+	}
+	17% {
+		border-radius: 0;
+		background: linear-gradient(45deg, #DC143C, #F08080);
+	}
+	33% {
+		background: radial-gradient(#FF69B4, #9400D3);
+	}
+	50% {
+		height: 50px;
+		width: 50px;
+		transform: skew(30deg);
+		background: radial-gradient(#FF69B4, #9400D3);
+	}
+	67% {
+		transform: rotate(-220deg);
+		background: radial-gradient(#FF69B4, #9400D3);
+	}
+	84% {
+		background: linear-gradient(90deg, #4169E1, #87CEEB);
+	}
+	100% {
+		border-radius: 90%;
+		background: linear-gradient(90deg, #4169E1, #87CEEB);
+	}
+}

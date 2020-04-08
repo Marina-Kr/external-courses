@@ -1,0 +1,53 @@
+form {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap
+}
+
+div {
+	position: relative;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+label {
+	position: absolute;
+	left: 0;
+	top: 0;
+	color: #999;
+	font-size: 10px;
+}
+
+.field {
+	margin-top: 15px;
+	border: 1px solid #999;
+	padding: 3px 2px;
+	margin-bottom: 5px;
+	font-family: Arial;
+}
+
+.field:invalid+label {
+	top: 3px;
+	opacity: 0;
+}
+
+.field:valid+label {
+	opacity: 1;
+	top: 0;
+}
+
+.field:focus {
+	outline: none;
+}
+
+.field:focus+label {
+	color: #A33;
+}
+
+#title {
+	flex: 0 1 90%;
+}
+
+#location {
+	flex: 0 1 80%;
+}
