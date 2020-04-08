@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+header,
+footer {
+	position: absolute;
+	width: 1152px;
+	height: 55px;
+	background: #0067A3
+}
+
+#menu_icon {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	margin: 13px;
+}
+
+h1 {
+	position: absolute;
+	width: 331px;
+	height: 26px;
+	left: 53px;
+	margin: 10px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 28px;
+	line-height: 33px;
+	color: #FFFFFF;
+}
+
+#new {
+	position: absolute;
+	width: 181px;
+	height: 33px;
+	left: 72%;
+	top: 10px;
+	background: #fff;
+	border-radius: 5px;
+}
+
+#add {
+	position: absolute;
+	left: 4.17%;
+	right: 4.17%;
+	top: 20%;
+	bottom: 4.17%;
+}
+
+#new_list {
+	position: absolute;
+	width: 140px;
+	height: 18px;
+	left: 40px;
+	top: -10px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	color: #000000;
+}
+
+#user {
+	position: absolute;
+	width: 39px;
+	height: 39px;
+	left: 93%;
+	top: 8px;
+	border-radius: 100%;
+	background-color: #fff;
+}
+
+#avatar {
+	position: absolute;
+	left: 5.5px;
+	top: 4px;
+}
+
+#arrow {
+	position: absolute;
+	left: 98%;
+	top: 25px;
+}
+
+footer {
+	top: 75%;
+	display: flex;
+}
+
+#active,
+#finished,
+#author {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	color: #FFFFFF;
+}
+
+#active {
+	padding-left: 7%;
+}
+
+#finished {
+	padding-left: 5%;
+}
+
+#author {
+	padding-left: 30%;
+}
