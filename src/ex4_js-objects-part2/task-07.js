@@ -1,9 +1,9 @@
 function addDots(str, n) {
-    let newstr = str
-    if (n < newstr.length) {
-        newstr = newstr.substring(0, n - 1) + "…"
+    let result = str
+    if (n < result.length) {
+        result = result.substring(0, n - 1) + "…"
     }
-    return newstr
+    return result
 }
 
 module.exports = addDots

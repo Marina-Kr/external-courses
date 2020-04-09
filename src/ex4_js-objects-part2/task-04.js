@@ -1,6 +1,5 @@
 function convertToUpper(str) {
-    let st = str[0].toUpperCase() + str.slice(1)
-    return st
+    return str[0].toUpperCase() + str.slice(1)
 }
 
 module.exports = convertToUpper

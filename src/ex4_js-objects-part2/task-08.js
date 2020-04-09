@@ -1,10 +1,10 @@
 function convertTolCC(str) {
-    let newstr = str[0].toLowerCase() + str.slice(1)
-    for (let i = 0; i <= newstr.length; i++) {
-        if (newstr[i] === " ") { 
-            newstr = newstr.substring(0, i) + newstr[i + 1].toUpperCase() + newstr.substring(i + 2).toLowerCase() }
+    let result = str[0].toLowerCase() + str.slice(1)
+    for (let i = 0; i <= result.length; i++) {
+        if (result[i] === " ") { 
+            result = result.substring(0, i) + result[i + 1].toUpperCase() + result.substring(i + 2).toLowerCase() }
     }
-    return newstr
+    return result
 }
 
 module.exports = convertTolCC

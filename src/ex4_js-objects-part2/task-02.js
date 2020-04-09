@@ -1,6 +1,5 @@
 function createEmptyObj() {
-    let emtpyObj = Object.create(null)
-    return emtpyObj
+    return Object.create(null)
 }
 
 module.exports = createEmptyObj

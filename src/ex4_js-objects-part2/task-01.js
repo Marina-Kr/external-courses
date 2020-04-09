@@ -1,6 +1,7 @@
 function ShowKey(key, obj) {
-    if (key in Object.getPrototypeOf(obj)) { 
-        return Object.getPrototypeOf(obj)[key]
+	let objPrototype = Object.getPrototypeOf(obj)
+    if (key in objPrototype) { 
+        return objPrototype[key]
      }
 }
 
