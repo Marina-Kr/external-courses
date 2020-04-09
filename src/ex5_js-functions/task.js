@@ -7,25 +7,25 @@ function checkType(number){
 
 let Calculator = {
     result: 0,
-add:  function (number){  
+add:  function (number=0){  
   if (checkType(number)) {
         Calculator.result = Calculator.result + number
   }
   return Calculator.add;
 },
-subtract: function (number) {
+subtract: function (number=0) {
   if (checkType(number)) {
        Calculator.result = Calculator.result - number
    }
    return Calculator.subtract;
  },
- divide: function (number) {
-   if (checkType(number) && number!==null && number!==0) {
+ divide: function (number=1) {
+   if (checkType(number)) {
        Calculator.result = Calculator.result / number
 	}
    return Calculator.divide;
 },
-multiply: function (number) {
+multiply: function (number=1) {
    if (checkType(number)) {
     Calculator.result = Calculator.result * number
     }
@@ -36,8 +36,7 @@ getResult: function () {
 },
 reset: function () {
      Calculator.result = 0;
-     return Calculator.result;
-}  
+  }  
 }
 
 module.exports=Calculator
