@@ -7,5 +7,4 @@ function searchSubstr(str, substr) {
     return false
 }
 
-
 module.exports = searchSubstr
