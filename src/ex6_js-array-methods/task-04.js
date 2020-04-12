@@ -1,12 +1,11 @@
 function newFilter(arr, callback) {
-  let new_arr=[], j=0
+  let result=[];
   for (let i = 0; i < arr.length; i++) {
-	if (callback(arr[i], i, arr) === true) {
-	  new_arr[j]=arr[i]
-      j++
-	}
+	if (callback(arr[i], i, arr)) {
+	  result.push(arr[i])
+    }
   }
-  return new_arr;
+  return result;
 }
 
 module.exports=newFilter
