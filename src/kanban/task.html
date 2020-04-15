@@ -21,11 +21,25 @@
     </div>
     <ul id="user_menu"><img id="arrow" alt="arrow_down" src="images/arrow_down.svg"></ul>
   </header>
-  <section>
-  </section>
+  <main>
+  <div  class="tasks" id ="backlog">Backlog <img class="dots" src="images/dots.svg" alt="•••">
+   <button class="btn_add_card" id="btn_add_backlog"><img src="images/add_card.svg" alt="plus"> Add card</button>
+  </div>
+    <div  class="tasks" id ="ready">Ready <img class="dots" src="images/dots.svg" alt="•••">
+	  <button class="btn_add_card" id="btn_add_ready"><img src="images/add_card.svg" alt="plus"> Add card</button>
+  </div>
+    <div  class="tasks" id ="progress">In progress <img class="dots" src="images/dots.svg" alt="•••">
+	  <button class="btn_add_card" id="btn_add_progress"><img src="images/add_card.svg" alt="plus"> Add card</button>
+  </div>
+    <div  class="tasks" id ="finished">Finished <img class="dots" src="images/dots.svg" alt="•••">
+	  <button class="btn_add_card" id="btn_add_finished"><img src="images/add_card.svg" alt="plus"> Add card</button>
+	  </div>
+ 
+    
+  </main>
   <footer>
-    <p id="active">Active tasks: &lt; N &gt; </p>
-    <p id="finished">Finished tasks: &lt; M &gt; </p>
+    <p id="count_active">Active tasks: &lt; N &gt; </p>
+    <p id="count_finished">Finished tasks: &lt; M &gt; </p>
     <p id="author">Kanban board by Kryuchkova Marina, 2020</p>
   </footer>
 </body>
