@@ -76,8 +76,7 @@ h3 {
 #search:not(:hover),
 #env:not(:hover) {
 	filter: saturate(1%);
-	-webkit-filter: saturate(1%);
-}
+	}
 
 .arabia {
 	width: 183px;
@@ -289,11 +288,11 @@ h4 {
 	margin-top: 0;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1140px) {
 	section {
 		background: url(background-less.jpg);
-		max-width: 1200px;
-		height: 790px;
+		max-width: 1140px;
+		height: 720px;
 	}
 	#footer {
 		flex-wrap: wrap;
@@ -301,10 +300,9 @@ h4 {
 	body {
 		max-width: 1200px;
 	}
-	.hide {
+	.hide, #icons {
 		display: none;
-		opacity: 0;
-	}
+		}
 	nav {
 		position: relative;
 		min-height: 40px;
@@ -343,7 +341,7 @@ h4 {
 	}
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 720px) {
 	section {
 		max-width: 900px;
 		height: 790px;
