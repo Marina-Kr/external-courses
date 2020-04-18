@@ -288,7 +288,7 @@ h4 {
 	margin-top: 0;
 }
 
-@media screen and (max-width: 1140px) {
+@media (max-width: 1140px) {
 	section {
 		background: url(background-less.jpg);
 		max-width: 1140px;
@@ -341,7 +341,7 @@ h4 {
 	}
 }
 
-@media screen and (max-width: 720px) {
+@media (max-width: 720px) {
 	section {
 		max-width: 900px;
 		height: 790px;
