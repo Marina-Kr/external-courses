@@ -55,7 +55,7 @@ class Gift {
 
 let barbaris = new Candy("Барбарис", 0.3, 10, "Карамель");
 let korovka = new Candy("Коровка", 0.4, 15, "Карамель");
-let toffee = new Candy("Toffee", 0.5, 15);
+let toffee = new Candy("Toffee", 0.5, 15); 
 let milka = new Chocolate("Милка", 3, 90, "С фундуком");
 let ritterSport = new Chocolate("Ritter Sport", 2.5, 120, "С мятой");
 let sharliz = new Marmelad("Шарлиз", 5, 50, "Квадрат");

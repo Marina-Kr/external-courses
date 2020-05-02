@@ -51,7 +51,7 @@ let bosch = new iron("Bosch TDA2325", 2250, false, "good");
 let tefal = new iron("Tefal FV3915", 2500, true);
 let samsung = new vacuumCleaner("Samsung SC8836", 3500, false, true);
 let lumme = new vacuumCleaner("Lumme LU-3216", 3800, true, false);
-let bedroom = new room([rowenta, babyliss, bosch, tefal, samsung, lumme])
-console.log(bedroom.devices)
-console.log(bedroom.calculatePower())
-console.log(bedroom.searchDevice("Tefal FV3915"))
+let bedroom = new room([rowenta, babyliss, bosch, tefal, samsung, lumme]);
+console.log(bedroom.devices);
+console.log(bedroom.calculatePower());
+console.log(bedroom.searchDevice("Tefal FV3915"));
