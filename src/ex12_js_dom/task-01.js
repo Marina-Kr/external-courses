@@ -1,5 +1,6 @@
 function slider(images) {
  let i = 0
+ document.querySelector('.images .active').src = images[0].src;
  
  document.getElementById('prev').onclick = function() {
   let currentImage = document.querySelector('.images .active');
@@ -34,7 +35,7 @@ function slider(images) {
   }
  
  function getImages(n){
-  for( var image, array = [], i = 1; i <= n; i++ ){
+  for( let image, array = [], i = 1; i <= n; i++ ){
     image = new Image;
 	if (i<10) {
 	  image.src = "asset/cat0" + i + ".jpg";}
@@ -45,10 +46,3 @@ function slider(images) {
 };
 
 slider(getImages(5));
- 
- 
-
- 
-
-
-
