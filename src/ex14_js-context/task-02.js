@@ -52,4 +52,4 @@ class Hangman {
     }
 }
 
-module.exports = new Hangman
+module.exports = new Hangman("webpurple")

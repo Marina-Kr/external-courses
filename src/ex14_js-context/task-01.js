@@ -61,4 +61,4 @@ class Calculator {
 
 }
 
-module.exports = new Calculator
+module.exports = new Calculator()
