@@ -1,0 +1,75 @@
+.with-hint,
+.without-hint,
+.textarea {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+}
+
+h2 {
+	font: 22px "Arial";
+	margin: 0px;
+}
+
+h5 {
+	color: red;
+	font: 10px "Arial";
+	margin: 0px;
+	padding-bottom: 5px;
+}
+
+.without-hint {
+	border-top: 1.5px solid #000;
+	padding-top: 5px;
+}
+
+label {
+	font: 14px "Arial";
+	flex: 0 1 15%;
+}
+
+input,
+textarea,
+.button {
+	background: #fff;
+	border: 1.5px solid gray;
+	border-radius: 6px;
+	font: 14px "Arial";
+	color: #636466;
+	padding: 6px;
+	margin: 10px 0;
+}
+
+input {
+	flex: 0 1 50%;
+}
+
+textarea {
+	height: 100px;
+	flex: 0 1 55%;
+}
+
+.button {
+	font: bold 14px "Arial";
+	color: black;
+	margin: 30px 10% 0 10%;
+	flex: 0 1 10%;
+}
+
+.arrow-left {
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-right: 10px solid #ad2121;
+	margin: 1px 0 0 5%;
+}
+
+.hint {
+	flex: 15%;
+	background: #ad2121;
+	align-self: center;
+	border: 2px solid #ad2121;
+	color: #fff;
+	margin: 10px 5% 10px 0;
+}

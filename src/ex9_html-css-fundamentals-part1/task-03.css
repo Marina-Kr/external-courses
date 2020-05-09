@@ -1,0 +1,21 @@
+button {
+border-radius: 15px;
+border: 8px double;
+padding: 10px;
+width: 180px;
+font-size: 15px;
+background: transparent;
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Silver_star.png/251px-Silver_star.png),
+url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Silver_star.png/251px-Silver_star.png);
+background-size: 30px;
+background-repeat: no-repeat;
+background-position: right 5px bottom 8px, left 5px bottom 8px;
+color: rgb(100, 100, 100);
+}
+
+div {background: linear-gradient(to top, rgb(120, 120, 120) 0%,
+rgb(180, 180, 180) 36%, rgb(240, 240, 240) 100%);
+background-size: 30px;
+border-radius: 15px;
+width: 180px;
+}
