@@ -37,6 +37,13 @@ class Hangman {
         let status = isWin ? 'You won!' : `errors left ${this.getErrorsLeft()}`;
         return `${this.getGuessedString()} | ${status}`;
     }
+  
+    startAgain(word) {
+        this.word = word;
+        this.wrongSymbols = [];
+        this.guessedString = Array(word.length).fill(UNDERSOCRESSYMBOL);
+		return this; 
+    }
 
     openSymbol(symbol) {
         let regExp = new RegExp(symbol, 'g');
