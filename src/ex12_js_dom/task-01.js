@@ -1,6 +1,8 @@
 function slider(images) {
  let i = 0
-  document.querySelector('.images .active').src = images[0].src;
+ const firstImage = document.querySelector('.images .active');
+ firstImage.src = images[0];
+ firstImage.alt = "cat's picture № 1";
  
  document.getElementById('prev').onclick = function() {
   let currentImage = document.querySelector('.images .active');
@@ -8,7 +10,8 @@ function slider(images) {
   if(i <= 0) {
     i = images.length;
    }
-   prevImage.src = images[i-1].src;
+   prevImage.src = images[i-1]
+   prevImage.alt = `cat's picture № ${i}`;
    prevImage.className = "active";
    currentImage.className = "inactive"
    i--;
@@ -20,7 +23,8 @@ function slider(images) {
    if(i >= images.length-1) {
      i = -1;
    }
-  nextImage.src = images[i+1].src
+  nextImage.src = images[i+1]
+  nextImage.alt = `cat's picture № ${i+2}`;
   nextImage.className = "active";
   currentImage.className = "inactive";
   i++;
@@ -45,4 +49,5 @@ function slider(images) {
   return array;
 };
 
-slider(getImages(5));
+const images = ["asset/1.jpg", "asset/2.jpg", "asset/3.jpg", "asset/4.jpg", "asset/5.jpg"];
+slider(images);
