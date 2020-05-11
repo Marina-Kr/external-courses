@@ -17,6 +17,6 @@ function newFetch(url, obj) {
         xhr.onerror = () => reject(xhr.statusText);
         xhr.send(obj.body);
     });
-};
+}; 
 
 module.exports = newFetch
