@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="src/css/main.css">
+      <script src="src/js/main.js" type="module"></script>
+      <title>kanban</title>
+   </head>
+   <body>
+      <header class="header">
+         <a class="menu" href="/"><img class="menu__icon" alt="menu_icon" src="src/images/list.svg"></a>
+         <h1 class="header__title title">Awesome Kanban Board</h1>
+         <div class="header_container container">
+            <a href="/" class="container__add"><img class="container__add-icon" alt="add" src="src/images/add.svg"></a>
+            <p class="container__text text">Create new list</p>
+         </div>
+         <div class="header__user user">
+            <a href="/"><img class="user__avatar" alt="avatar" src="src/images/avatar.svg"></a>
+            <ul class="user__menu"><img class="user__arrow" id="arrow" alt="arrow_down" src="src/images/arrow_down.svg"></ul>
+         </div>
+      </header>
+      <main class="content">
+         <ul class="content__tasks tasks" id="backlog">Backlog <img class="tasks__dots" src="src/images/dots.svg" alt="•••"><br>
+            <button class="tasks__button button" id="btn_add_backlog"><img src="src/images/add_card.svg" alt="plus"> Add card</button>
+         </ul>
+         <ul class="content__tasks tasks" id="ready">Ready <img class="tasks__dots" src="src/images/dots.svg" alt="•••">
+            <button class="tasks__button button" id="btn_add_ready"><img src="src/images/add_card.svg" alt="plus"> Add card</button>
+         </ul>
+         <ul class="content__tasks tasks" id="progress">In progress <img class="tasks__dots" src="src/images/dots.svg" alt="•••">
+            <button class="tasks__button button" id="btn_add_progress"><img src="src/images/add_card.svg" alt="plus"> Add card</button>
+         </ul>
+         <ul class="content__tasks tasks" id="finished">Finished <img class="tasks__dots" src="src/images/dots.svg" alt="•••">
+            <button class="tasks__button button" id="btn_add_finished"><img src="src/images/add_card.svg" alt="plus"> Add card</button>
+         </ul>
+      </main>
+      <footer class="footer">
+         <p class="footer__count-active count-active">Active tasks: &lt; N &gt; </p>
+         <p class="footer__count-finished count-finished">Finished tasks: &lt; M &gt; </p>
+         <p class="footer__author author">Kanban board by Kryuchkova Marina, 2020</p>
+      </footer>
+   </body>
+</html>

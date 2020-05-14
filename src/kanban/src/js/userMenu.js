@@ -1,4 +1,4 @@
-window.onload = function () {
+export function userMenu () {
   let ul = document.querySelector('ul')
   let arrow = document.querySelector('#arrow')
   let wasClick = false;

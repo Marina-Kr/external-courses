@@ -1,4 +1,4 @@
-function manageIssues() {
+export function manageIssues() {
 
 	let backlogStorage = []
 	let readyStorage = []
@@ -88,7 +88,7 @@ function manageIssues() {
 	function changeIssue(storageFrom, storageTo) {
 		return function (onclick) {
 			this.remove();
-			for (i = 0; i < storageFrom.length; i++) {
+			for (let i = 0; i < storageFrom.length; i++) {
 				if (storageFrom[i].name === this.innerHTML) {
 					document.querySelector('#dropdown_tasks').animate([
 						{ transform: 'translate(0)' },
@@ -179,7 +179,7 @@ function manageIssues() {
 	document.querySelector('#btn_add_finished').addEventListener('click', addIssueFinished, false);
 }
 
-document.addEventListener('DOMContentLoaded', manageIssues, false);
+
 
 
 
