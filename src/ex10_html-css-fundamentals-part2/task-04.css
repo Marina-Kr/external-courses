@@ -13,10 +13,9 @@ body {
 	margin: 30px 40% 30px 10%;
 	width: 35%;
 	height: 80px;
-	background-image: url(logo.jpg);
+	background-image: url(images/logo.jpg);
 	margin-bottom: 0;
 }
-
 
 .header__title {
 	margin: 30px 40%;
@@ -29,12 +28,14 @@ body {
 	margin-bottom: 0;
 }
 
+.header__icons {
+	margin-right: 5%;
+}
 
 .icons__message {
 	width: 227px;
 	height: 61px;
-	padding: 0 38% 0 38%;
-	margin: 20px 0px 0px -46%;
+	margin: 20px 0px 0px -8%;
 }
 
 .icons__phone {
@@ -68,7 +69,10 @@ body {
 	z-index: 1;
 	position: absolute;
 	top: 15px;
-	
+}
+
+icons__nowrap {
+	flex-wrap: no-wrap
 }
 
 .icons__phone:not(:hover),
@@ -76,8 +80,7 @@ body {
 .search__icon:not(:hover),
 .icons__env:not(:hover) {
 	filter: saturate(1%);
-	}
-
+}
 
 .header__line {
 	margin: 0;
@@ -105,7 +108,7 @@ body {
 }
 
 .panel__item:hover {
-	background: url(arrow.svg) bottom no-repeat;
+	background: url(images/arrow.svg) bottom no-repeat;
 }
 
 .panel__link {
@@ -129,84 +132,73 @@ body {
 	padding: 0;
 }
 
-
 .search__input {
 	height: 30px;
 	align-self: center;
 	margin-top: 0px;
 	border: none;
-
 }
 
 .header__search {
-margin-right: 7%;
+	margin-right: 7%;
 }
 
 .main {
 	margin: 0;
-	background: url(background.jpg) center;
-background-size: cover;
+	background: url(images/background.jpg) center;
+	background-size: cover;
 }
-
 
 .main_content {
-padding: 15% 15% 10% 20%;
-position: relative;	
+	padding: 15% 15% 10% 20%;
+	position: relative;
 }
 
-
 .content__text {
-	position: relative;	
+	position: relative;
 	margin: 0;
 	color: #ffffff;
 	font-family: "Open Sans";
 	text-shadow: 1px 1px 8px rgba(1, 1, 1, 0.15);
-
-	}
+}
 
 .content__text__font-large {
 	font-size: 58px;
 	font-weight: 700;
-	}
+}
 
 .content__text__font-small {
 	font-size: 45px;
 	font-weight: 300;
-
 }
 
 .content__and {
 	position: absolute;
 	bottom: 35%;
-	
 }
 
 .main__pictures {
-		position: relative;
-		left: 35%;
-		display: flex;
-		width: 15%;
-		height: 241px;
-	
+	position: relative;
+	left: 35%;
+	display: flex;
+	width: 15%;
+	height: 241px;
 }
 
-
-
-
 .main__block__green {
-	background: url(green-logo.jpg) center;
-	  background-size: 100%;
+	background: url(images/green-logo.jpg) center;
+	background-size: 100%;
 }
 
 .main__block__orange {
-	background: url(orange-logo.jpg) center;
-	  background-size: 100%;
+	background: url(images/orange-logo.jpg) center;
+	background-size: 100%;
 }
 
 .main__block-gray {
-	background: url(gray-figure.jpg) center;
-	  background-size: 100%;
-	  min-width: 111px;
+	background: url(images/gray-figure.jpg) center;
+	background-size: 100%;
+	min-width: 111px;
 }
 
 .main__figure {
@@ -216,86 +208,75 @@ position: relative;
 }
 
 .main__heart {
-position: relative;	
-left: 45%;
-top: 55%;
-}	
+	position: relative;
+	left: 45%;
+	top: 55%;
+}
 
 .main__arrow {
 	margin: 90% 45%;
-}	
-
-h4 {
-	color: #6d6e71;
-	font-family: "Open Sans";
-	font-size: 26px;
-	font-weight: 700;
-	line-height: 24px;
 }
 
-.text {
+.footer {
+	margin-top: 30px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.footer__title {
+	color: #6d6e71;
+	font-family: "Open Sans";
+	font-weight: 700;
+	line-height: 24px;
+	width: 50%;
 	margin-left: 25%;
-	margin-top: 0;
-	margin-bottom: 0;
+}
+
+.footer__text {
+	margin-left: 20%;
 	color: #6d6e71;
 	font-family: "Open Sans";
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 24px;
-	position: relative;
-	top: -100px;
+	text-align: justify;
 }
 
-#lamp {
-	margin-left: 5%;
-}
-
-#footer {
-	margin: 0;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-}
-
-#div_about,
-#div_why {
+.footer__about {
 	margin-left: 10%;
-	margin-top: 0;
+	flex: 0 1 35%;
+}
+
+.footer__img {
+	position: absolute;
 }
 
 @media (max-width: 1140px) {
-	#footer {
-		flex-wrap: wrap;
+	.footer__about {
+		flex: 0 1 80%;
 	}
-	
 	.icons,
-.main__pictures	{
+	.main__pictures {
 		display: none;
-		}
-		
+	}
 	.panel__navigation {
 		position: relative;
 		min-height: 40px;
 		margin-left: 30px;
 	}
-	
 	.panel__menu {
 		width: 150px;
 		padding: 5px 0;
 		position: absolute;
-		background: url(menu.svg) left no-repeat;
+		background: url(images/menu.svg) left no-repeat;
 		height: 25px;
-		}
-		
+	}
 	.panel__item {
-
 		width: 150px;
 		background-color: #fff;
 		display: none;
-			}
-			
-			
+	}
 	.panel__link {
 		display: block;
 		text-align: left;
@@ -303,11 +284,9 @@ h4 {
 		background: none;
 		color: #666;
 	}
-	
 	.panel__item:hover {
-		background: url(arrow.png) left no-repeat;
+		background: url(images/arrow.png) left no-repeat;
 	}
-	
 	.panel__menu:hover li {
 		display: block;
 		background-color: #fff;
