@@ -1,0 +1,65 @@
+body {
+width: 90%;
+}
+
+.images {
+	position: relative;
+	left: 100px;
+	margin-left: 20px;
+}
+
+.active,
+.inactive {
+	margin: 50px;
+	height: 500px;
+	width: 1000px;
+	margin-left: 10%;
+	position: absolute;
+	transition: opacity 1.5s ease-out;
+	box-shadow: 0px 1px 0px #666, 0px 5px 0px #999, 0px 6px 6px rgba(0, 0, 0, .6);
+}
+
+.inactive {
+	opacity: 0;
+}
+
+.active {
+	opacity: 1;
+}
+
+.buttons {
+	position: relative;
+	top: 610px;
+}
+
+#next,
+#prev {
+	position: relative;
+	left: 35%;
+	width: 100px;
+	height: 50px;
+	padding: 10px 15px;
+	cursor: pointer;
+}
+
+#next:hover,
+#prev:hover {
+	border: none;
+	border-radius: 3px;
+	box-shadow: 0px 1px 0px #666, 0px 5px 0px #999, 0px 6px 6px rgba(0, 0, 0, .6);
+	transition: ease .30s all;
+}
+
+#next:active,
+#prev:active {
+	box-shadow: 0px 1px 0px #666, 0px 2px 0px #444, 0px 2px 2px rgba(0, 0, 0, .5);
+	}
+
+#prev {
+	background: url(prev.png) no-repeat center;
+}
+
+#next {
+	margin-left: 5%;
+	background: url(next.png) no-repeat center;
+}
