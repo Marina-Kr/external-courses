@@ -2,6 +2,7 @@ body {
 	background: url(background-white.jpg) center;
 	background-size: cover;
 	margin: 0;
+	font-size: 15px;
 }
 
 .header__container {
@@ -22,7 +23,7 @@ body {
 	height: 11px;
 	color: #3687c4;
 	font-family: "Open Sans";
-	font-size: 41px;
+	font-size: 2.5rem;
 	font-weight: 400;
 	line-height: 34px;
 	margin-bottom: 0;
@@ -35,7 +36,7 @@ body {
 .icons__message {
 	width: 227px;
 	height: 61px;
-	margin: 20px 0px 0px -8%;
+	margin: 20px 0px 0px -10%;
 }
 
 .icons__phone {
@@ -64,16 +65,16 @@ body {
 	height: 17px;
 	color: #6d6e71;
 	font-family: "Open Sans";
-	font-size: 16px;
+	font-size: 1rem;
 	line-height: 27px;
 	z-index: 1;
 	position: absolute;
 	top: 15px;
 }
 
-icons__nowrap {
+.icons__nowrap {
 	flex-wrap: nowrap
-} 
+}
 
 .icons__phone:not(:hover),
 .icons__loc:not(:hover),
@@ -117,7 +118,7 @@ icons__nowrap {
 	height: 10px;
 	color: #6d6e71;
 	font-family: "Open Sans";
-	font-size: 13px;
+	font-size: 0.8rem;
 	font-weight: 700;
 	line-height: 27px;
 }
@@ -163,12 +164,12 @@ icons__nowrap {
 }
 
 .content__text__font-large {
-	font-size: 58px;
+	font-size: 4rem;
 	font-weight: 700;
 }
 
 .content__text__font-small {
-	font-size: 45px;
+	font-size: 3rem;
 	font-weight: 300;
 }
 
@@ -237,7 +238,7 @@ icons__nowrap {
 	margin-left: 20%;
 	color: #6d6e71;
 	font-family: "Open Sans";
-	font-size: 16px;
+	font-size: 1rem;
 	font-weight: 300;
 	line-height: 24px;
 	text-align: justify;
@@ -271,6 +272,7 @@ icons__nowrap {
 		position: absolute;
 		background: url(images/menu.svg) left no-repeat;
 		height: 25px;
+		z-index: 1;
 	}
 	.panel__item {
 		width: 150px;
