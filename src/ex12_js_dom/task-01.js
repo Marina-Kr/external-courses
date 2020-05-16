@@ -38,16 +38,5 @@ function slider(images) {
   });
   }
  
- function getImages(n){
-  for (var image, array = [], i = 1; i <= n; i++ ){
-    image = new Image;
-	if (i<10) {
-	  image.src = "asset/cat0" + i + ".jpg";}
-	  else image.src = "asset/cat" + i + ".jpg";
-   array.push(image);
-  };
-  return array;
-};
-
 const images = ["asset/1.jpg", "asset/2.jpg", "asset/3.jpg", "asset/4.jpg", "asset/5.jpg"];
 slider(images);
