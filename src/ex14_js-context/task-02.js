@@ -1,11 +1,11 @@
-const UNDERSOCRESSYMBOL = '_';
-const ATTEPTSNUMBER = 6;
+const UNDERSOCRES_SYMBOL = '_';
+const ATTEMPTS_NUMBER = 6;
 
 class Hangman {
     constructor(word) {
         this.word = word;
         this.wrongSymbols = [];
-        this.guessedString = Array(word.length).fill(UNDERSOCRESSYMBOL);
+        this.guessedString = Array(word.length).fill(UNDERSOCRES_SYMBOL);
     }
 
     guess(symbol) {
@@ -29,11 +29,11 @@ class Hangman {
     }
 
     getErrorsLeft() {
-        return ATTEPTSNUMBER - this.wrongSymbols.length;
+        return ATTEMPTS_NUMBER - this.wrongSymbols.length;
     }
 
     getStatus() {
-        let isWin = !this.guessedString.includes(UNDERSOCRESSYMBOL);
+        let isWin = !this.guessedString.includes(UNDERSOCRES_SYMBOL);
         let status = isWin ? 'You won!' : `errors left ${this.getErrorsLeft()}`;
         return `${this.getGuessedString()} | ${status}`;
     }
@@ -41,7 +41,7 @@ class Hangman {
     startAgain(word) {
         this.word = word;
         this.wrongSymbols = [];
-        this.guessedString = Array(word.length).fill(UNDERSOCRESSYMBOL);
+        this.guessedString = Array(word.length).fill(UNDERSOCRES_SYMBOL);
 		return this; 
     }
 
