@@ -1,9 +1,8 @@
 export function manageIssues() {
-
-	let backlogStorage = []
-	let readyStorage = []
-	let progressStorage = []
-	let finishedStorage = []
+	let backlogStorage = [],
+	readyStorage = [],
+	progressStorage = [],
+	finishedStorage = [];
 
 	function disableButton(ulId, buttonId) {
 		if (document.querySelector(ulId).querySelector('li')) {
@@ -178,9 +177,3 @@ export function manageIssues() {
 	document.querySelector('#btn_add_progress').addEventListener('click', addIssueProgress, false);
 	document.querySelector('#btn_add_finished').addEventListener('click', addIssueFinished, false);
 }
-
-
-
-
-
-
